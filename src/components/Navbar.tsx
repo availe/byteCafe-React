@@ -12,9 +12,9 @@ const Navbar = () => {
       case 0:
         navigate("/");
         break;
-      // case 1:
-      //   navigate("/products");
-      //   break;
+      case 1:
+        navigate("/products");
+        break;
       // case 2:
       //   navigate("/about");
       //   break;
