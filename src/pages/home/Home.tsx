@@ -1,12 +1,5 @@
-import {
-  Box,
-  Typography,
-  Button,
-  Table,
-  TableContainer,
-  Paper,
-  Link,
-} from "@mui/material";
+import { Box, Typography, Button, Link } from "@mui/material";
+import FeaturedTable from "./FeaturedTable";
 
 const Home = () => {
   return (
@@ -24,9 +17,7 @@ const Home = () => {
       <Typography variant="h2" component="h2">
         Our featured products
       </Typography>
-      <TableContainer component={Paper}>
-        <table aria-label="featured products table"></table>
-      </TableContainer>
+      <FeaturedTable />
     </Box>
   );
 };
