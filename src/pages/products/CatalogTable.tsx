@@ -13,6 +13,7 @@ import {
   StyledBox,
   StyledBtn,
 } from "../../styles/StyledTable";
+import { Paper } from "@mui/material";
 
 interface CatalogTablesProp {
   isDrinkTable: boolean;
@@ -32,15 +33,17 @@ const CatalogTable = ({ isDrinkTable, items, columns }: CatalogTablesProp) => {
   const tableCell = items
     .filter((item) => item.isDrink === isDrinkTable)
     .map((item) => (
-      <StyledBox>
-        <StyledImage src={item.image} alt={item.image} />
-        <Typography>{item.name}</Typography>
-        <Box sx={{ display: "flex", justifyContent: "space-evenly" }}>
-          <StyledBtn size="small">Clear</StyledBtn>
-          <StyledBtn size="small">-</StyledBtn>
-          <StyledBtn size="small">+</StyledBtn>
-        </Box>
-      </StyledBox>
+      <Paper elevation={2} sx={{ padding: "1rem" }}>
+        <StyledBox>
+          <StyledImage src={item.image} alt={item.image} />
+          <Typography>{item.name}</Typography>
+          <Box sx={{ display: "flex", justifyContent: "space-evenly" }}>
+            <StyledBtn size="small">Clear</StyledBtn>
+            <StyledBtn size="small">-</StyledBtn>
+            <StyledBtn size="small">+</StyledBtn>
+          </Box>
+        </StyledBox>
+      </Paper>
     ));
 
   return (

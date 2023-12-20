@@ -15,9 +15,9 @@ const Navbar = () => {
       case 1:
         navigate("/products");
         break;
-      // case 2:
-      //   navigate("/about");
-      //   break;
+      case 2:
+        navigate("/about");
+        break;
       // case 3:
       //   navigate("/cart");
       //   break;
@@ -42,9 +42,6 @@ const Navbar = () => {
           <Tab label="About" />
           <Tab label="Cart" />
         </Tabs>
-        <Button variant="contained" disableElevation>
-          Theme
-        </Button>
       </Toolbar>
     </AppBar>
   );

@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Products from "./pages/products/Products";
-// import About from "./pages/about/About";
+import About from "./pages/about/About";
 // import Cart from "./pages/cart/Cart";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
-        {/*<Route path="/" element={<About />} />*/}
+        <Route path="/about" element={<About />} />
         {/*<Route path="/" element={<Cart />} />*/}
       </Routes>
       <Footer />
