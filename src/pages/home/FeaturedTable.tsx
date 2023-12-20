@@ -38,7 +38,7 @@ const FeaturedTable = () => {
               <p>{Items[1].name}</p>
             </TableCell>
             <TableCell sx={{ textAlign: "center" }}>
-              <p>{Items[1].name}</p>
+              <p>{Items[2].name}</p>
             </TableCell>
           </TableRow>
         </TableBody>
