@@ -2,7 +2,9 @@ import { Box, Typography } from "@mui/material";
 const AboutMiddle = () => {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-      <Typography>Our leadership</Typography>
+      <Typography variant="h2" component="h2">
+        Our leadership
+      </Typography>
       <Box sx={{ display: "flex", flexDirection: "row" }}>
         <Box sx={{ display: "flex", flex: "1" }}>
           <Typography>

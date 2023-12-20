@@ -1,8 +1,10 @@
 import { Box, Typography } from "@mui/material";
 const AboutTop = () => {
   return (
-    <Box sx={{ display: "flex", flexDirection: "column" }}>
-      <Typography>Proud locally-owned business since 1891</Typography>
+    <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+      <Typography variant="h2" component="h2">
+        Proud locally-owned business since 1891
+      </Typography>
       <Typography>
         Ever since our founder Casey David created byteCafe in 1891, our mission
         has been to provide high quality organic coffee. Sourced straight from
