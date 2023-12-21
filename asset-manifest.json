@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://availe.github.io/byteCafe-React/static/css/main.f855e6bc.css",
-    "main.js": "https://availe.github.io/byteCafe-React/static/js/main.97ae296a.js",
+    "main.js": "https://availe.github.io/byteCafe-React/static/js/main.5d90f095.js",
     "static/js/787.8dbe09f4.chunk.js": "https://availe.github.io/byteCafe-React/static/js/787.8dbe09f4.chunk.js",
     "index.html": "https://availe.github.io/byteCafe-React/index.html",
     "main.f855e6bc.css.map": "https://availe.github.io/byteCafe-React/static/css/main.f855e6bc.css.map",
-    "main.97ae296a.js.map": "https://availe.github.io/byteCafe-React/static/js/main.97ae296a.js.map",
+    "main.5d90f095.js.map": "https://availe.github.io/byteCafe-React/static/js/main.5d90f095.js.map",
     "787.8dbe09f4.chunk.js.map": "https://availe.github.io/byteCafe-React/static/js/787.8dbe09f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.97ae296a.js"
+    "static/js/main.5d90f095.js"
   ]
 }
