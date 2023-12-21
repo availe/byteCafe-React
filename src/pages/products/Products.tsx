@@ -10,13 +10,14 @@ const Products = () => {
         flexDirection: "column",
         textAlign: "Center",
         gap: "1.5rem",
+        marginTop: "1.5rem",
       }}
     >
-      <Typography variant="h1" component="h1">
+      <Typography variant="h2" component="h2">
         Our Catalog
       </Typography>
-      <CatalogTable columns={3} isDrinkTable={true} items={Items} />
-      <CatalogTable columns={3} isDrinkTable={false} items={Items} />
+      <CatalogTable isDrinkTable={true} items={Items} />
+      <CatalogTable isDrinkTable={false} items={Items} />
     </Box>
   );
 };

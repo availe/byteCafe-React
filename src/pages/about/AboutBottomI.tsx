@@ -10,11 +10,11 @@ const AboutBottomI = () => {
         borderTop: "red 1px solid",
       }}
     >
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
+      <Box sx={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
         <Typography>Call Us: +35-155-455-9555</Typography>
         <Typography>Email Us: customers@byteCafe.net</Typography>
       </Box>
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
+      <Box sx={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
         <Typography>Location: Silicon Street, California</Typography>
         <Typography>Website: byteCafe.com</Typography>
       </Box>{" "}

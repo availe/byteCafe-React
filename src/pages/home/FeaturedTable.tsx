@@ -1,17 +1,9 @@
-import {
-  TableContainer,
-  Table,
-  TableHead,
-  TableRow,
-  TableCell,
-  TableBody,
-  makeStyles,
-} from "@mui/material";
+import { TableBody, TableCell, TableContainer, TableRow } from "@mui/material";
 import Items from "../../data/items.json";
 import {
-  StyledTableCell,
   StyledImage,
   StyledTable,
+  StyledTableCell,
 } from "../../styles/StyledTable";
 
 const FeaturedTable = () => {

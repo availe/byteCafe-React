@@ -1,24 +1,10 @@
-import {
-  Box,
-  Button,
-  TableCell,
-  TableContainer,
-  TableHead,
-  Typography,
-} from "@mui/material";
-import {
-  StyledTableCell,
-  StyledTable,
-  StyledImage,
-  StyledBox,
-  StyledBtn,
-} from "../../styles/StyledTable";
-import { Paper } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
+import { StyledBox, StyledBtn, StyledImage } from "../../styles/StyledTable";
+import useItemCounts from "../../hooks/itemCount";
 
 interface CatalogTablesProp {
   isDrinkTable: boolean;
   items: Item[];
-  columns: number;
 }
 
 interface Item {
@@ -28,8 +14,10 @@ interface Item {
   price: number;
   isDrink: boolean;
 }
+const CatalogTable = ({ isDrinkTable, items }: CatalogTablesProp) => {
+  const { itemCount, incrementCount, decrementCount, clearCount } =
+    useItemCounts();
 
-const CatalogTable = ({ isDrinkTable, items, columns }: CatalogTablesProp) => {
   const tableCell = items
     .filter((item) => item.isDrink === isDrinkTable)
     .map((item) => (
@@ -38,9 +26,18 @@ const CatalogTable = ({ isDrinkTable, items, columns }: CatalogTablesProp) => {
           <StyledImage src={item.image} alt={item.image} />
           <Typography>{item.name}</Typography>
           <Box sx={{ display: "flex", justifyContent: "space-evenly" }}>
-            <StyledBtn size="small">Clear</StyledBtn>
-            <StyledBtn size="small">-</StyledBtn>
-            <StyledBtn size="small">+</StyledBtn>
+            <StyledBtn size="small" onClick={() => clearCount(item.index)}>
+              Clear
+            </StyledBtn>
+            <StyledBtn size="small" onClick={() => decrementCount(item.index)}>
+              -
+            </StyledBtn>
+            <StyledBtn size="small" onClick={() => incrementCount(item.index)}>
+              +
+            </StyledBtn>
+            <StyledBtn size="small">
+              {itemCount[item.index] ? itemCount[item.index] : 0}
+            </StyledBtn>
           </Box>
         </StyledBox>
       </Paper>
@@ -55,7 +52,7 @@ const CatalogTable = ({ isDrinkTable, items, columns }: CatalogTablesProp) => {
         textAlign: "center",
       }}
     >
-      <Typography variant="h2" component="h2">
+      <Typography variant="h3" component="h2">
         {isDrinkTable ? "Drinks" : "Food"}
       </Typography>
 

@@ -1,12 +1,4 @@
-import {
-  styled,
-  TableContainer,
-  TableCell,
-  Table,
-  Box,
-  Button,
-} from "@mui/material";
-import { BurstMode } from "@mui/icons-material";
+import { Box, Button, styled, Table, TableCell } from "@mui/material";
 
 const StyledTable = styled(Table)({
   display: "flex",
@@ -40,6 +32,10 @@ const StyledBtn = styled(Button)({
   textAlign: "center",
   background: "#3874CB",
   color: "white",
+  "&:hover": {
+    background: "#3874CB",
+    boxShadow: "0px 2px #b0c4de",
+  },
 });
 
 export { StyledTableCell, StyledImage, StyledTable, StyledBox, StyledBtn };

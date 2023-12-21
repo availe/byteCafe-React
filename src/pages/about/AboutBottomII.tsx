@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, TextField, Button, Typography } from "@mui/material";
+import { Box, Button, TextField, Typography } from "@mui/material";
 
 const AboutBottomII = () => {
   return (
@@ -14,7 +14,7 @@ const AboutBottomII = () => {
         label="Email"
         type="email"
         name="Email"
-        sx={{ marginBottom: "1rem", width: "70vw" }}
+        sx={{ marginBottom: "1rem", width: "60vw" }}
       />
       <TextField
         label="Message"
@@ -22,7 +22,7 @@ const AboutBottomII = () => {
         type="text"
         multiline
         rows={14} // apparently you must use rows instead of height
-        sx={{ marginBottom: "1rem", width: "70vw" }}
+        sx={{ marginBottom: "1rem", width: "60vw" }}
       />
       <Button
         variant="contained"

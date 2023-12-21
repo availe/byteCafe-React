@@ -3,7 +3,7 @@ import AboutMiddle from "./AboutMiddle";
 import { Fragment } from "react";
 import AboutBottomI from "./AboutBottomI";
 import AboutBottomII from "./AboutBottomII";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 const About = () => {
   return (

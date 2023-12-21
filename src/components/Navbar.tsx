@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Tabs, Tab, Button } from "@mui/material";
+import { AppBar, Tab, Tabs, Toolbar } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -18,11 +18,11 @@ const Navbar = () => {
       case 2:
         navigate("/about");
         break;
-      // case 3:
-      //   navigate("/cart");
-      //   break;
-      // default:
-      //   break;
+      case 3:
+        navigate("/cart");
+        break;
+      default:
+        break;
     }
   };
 
