@@ -34,7 +34,7 @@ const AboutMiddle = () => {
         </Box>
         <Box sx={{ display: "flex", flexDirection: "column", flex: "1" }}>
           <img
-            src="/assets/about_us_img.webp"
+            src="assets/about_us_img.webp"
             alt="A cafe with soothing pink and yellow walls"
             width="100%"
             height="auto"
