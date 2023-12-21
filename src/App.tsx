@@ -10,7 +10,7 @@ import Cart from "./pages/cart/Cart";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/byteCafe-React/">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
